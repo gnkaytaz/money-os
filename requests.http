@@ -1,0 +1,30 @@
+### Health
+GET http://localhost:8000/health
+
+### Search only
+GET http://localhost:8000/search?q=ручная%20сверка%20платежей%20бизнес&limit=5
+
+### Research: search -> crawl -> LLM -> DB
+POST http://localhost:8000/research
+Content-Type: application/json
+
+{
+  "query": "бизнес вручную сверяет платежи сотрудники автоматизация стоимость процесса",
+  "search_limit": 6,
+  "crawl_limit": 3
+}
+
+### Opportunities
+GET http://localhost:8000/opportunities
+
+### Feedback (replace UUID)
+POST http://localhost:8000/opportunities/REPLACE_UUID/feedback
+Content-Type: application/json
+
+{
+  "decision": "reject",
+  "reason": "already_solved_cheaply",
+  "correction": {
+    "note": "Existing SaaS solves this too cheaply; downgrade competition and opportunity score"
+  }
+}
