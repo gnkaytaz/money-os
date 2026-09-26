@@ -1,0 +1,17 @@
+{
+  "id": "A19b",
+  "title": "Достаточное existing solution: попытка TEST",
+  "base": "negative_test_attempt.json",
+  "changes": [],
+  "expected": {
+    "structure": true,
+    "graph": true,
+    "gate": "denied",
+    "invariant": "T-EXISTING"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "Adequate solution без доказанного остаточного разрыва блокирует TEST."
+  },
+  "reason": "Adequate solution без доказанного остаточного разрыва блокирует TEST."
+}

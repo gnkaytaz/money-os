@@ -1,0 +1,26 @@
+{
+  "id": "A14a",
+  "title": "Чужой Source ID",
+  "base": "candidate.json",
+  "changes": [
+    {
+      "path": [
+        "observations",
+        0,
+        "source_id"
+      ],
+      "value": "other-run/source"
+    }
+  ],
+  "expected": {
+    "structure": true,
+    "graph": false,
+    "gate": "not_requested",
+    "invariant": "G-REF"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "Чужой Source ID"
+  },
+  "reason": "Чужой Source ID"
+}

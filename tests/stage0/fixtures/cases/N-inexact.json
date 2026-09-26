@@ -1,0 +1,84 @@
+{
+  "id": "N-inexact",
+  "title": "Неявное округление бесконечной десятичной дроби запрещено",
+  "base": "candidate.json",
+  "changes": [
+    {
+      "path": [
+        "claims",
+        2,
+        "quantity"
+      ],
+      "value": {
+        "value": "12.50",
+        "unit": "money",
+        "currency": "USD",
+        "period": "month"
+      }
+    },
+    {
+      "path": [
+        "claims",
+        3,
+        "quantity"
+      ],
+      "value": {
+        "value": "3",
+        "unit": "ratio",
+        "currency": null,
+        "period": "one_time"
+      }
+    },
+    {
+      "path": [
+        "claims",
+        7,
+        "formula"
+      ],
+      "value": {
+        "operation": "divide",
+        "inputs": [
+          {
+            "claim_id": "c-rate",
+            "quantity": {
+              "value": "12.50",
+              "unit": "money",
+              "currency": "USD",
+              "period": "month"
+            }
+          },
+          {
+            "claim_id": "c-solution",
+            "quantity": {
+              "value": "3",
+              "unit": "ratio",
+              "currency": null,
+              "period": "one_time"
+            }
+          }
+        ],
+        "result": {
+          "value": "2.50",
+          "unit": "money",
+          "currency": "USD",
+          "period": "month"
+        },
+        "range": {
+          "low": "2.50",
+          "high": "2.50"
+        }
+      }
+    }
+  ],
+  "expected": {
+    "structure": true,
+    "graph": false,
+    "gate": "not_requested",
+    "invariant": "G-ARITHMETIC"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "Неявное округление бесконечной десятичной дроби запрещено"
+  },
+  "reason": "Неявное округление бесконечной десятичной дроби запрещено"
+}

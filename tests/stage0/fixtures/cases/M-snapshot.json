@@ -1,0 +1,38 @@
+{
+  "id": "M-snapshot",
+  "title": "Memory input не локальный Claim/Source ID",
+  "base": "candidate.json",
+  "changes": [
+    {
+      "path": [
+        "run",
+        "memory_inputs"
+      ],
+      "value": [
+        {
+          "origin_run_id": "previous-synthetic-run",
+          "feedback_id": "historical-feedback-1",
+          "kind": "research",
+          "text": "SYNTHETIC prior research feedback: accounting effort is not recoverable loss.",
+          "sha256": "3d7e1ca3311f8d360000f1f3a5efef836c3e1f91469d43b09b142e9d87142f21",
+          "selected_by": {
+            "kind": "human",
+            "id": "synthetic-operator"
+          },
+          "selected_at": "2026-08-31T12:00:00Z"
+        }
+      ]
+    }
+  ],
+  "expected": {
+    "structure": true,
+    "graph": true,
+    "gate": "not_requested",
+    "invariant": "G-MEMORY"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "Исторический feedback хранится как выбранный снимок с внешним origin run; не становится локальным Evidence."
+  },
+  "reason": "Исторический feedback хранится как выбранный снимок с внешним origin run; не становится локальным Evidence."
+}

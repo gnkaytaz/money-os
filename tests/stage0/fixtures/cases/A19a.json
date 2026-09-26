@@ -1,0 +1,17 @@
+{
+  "id": "A19a",
+  "title": "Достаточное existing solution: негативное исследование",
+  "base": "negative_research.json",
+  "changes": [],
+  "expected": {
+    "structure": true,
+    "graph": true,
+    "gate": "not_requested",
+    "invariant": "G-COMPLETENESS"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "Валидный incomplete candidate с INVESTIGATE, не разрешение TEST."
+  },
+  "reason": "Валидный incomplete candidate с INVESTIGATE, не разрешение TEST."
+}

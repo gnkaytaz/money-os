@@ -1,0 +1,91 @@
+{
+  "contract_version": "0.1",
+  "run": {
+    "id": "run-synthetic",
+    "synthetic": true,
+    "created_at": "2026-09-01T08:00:00Z",
+    "actor": {
+      "kind": "human",
+      "id": "synthetic-operator"
+    },
+    "query": {
+      "question": "Would a missing-row checklist help synthetic Company A?",
+      "segment": "Synthetic accounting teams",
+      "constraints": [
+        "Synthetic only; no network, transmission or real contacts."
+      ],
+      "primary_search": "synthetic manual reconciliation",
+      "counter_search": "synthetic reconciliation existing solution",
+      "search_limit": 8,
+      "page_limit": 5
+    },
+    "state": "insufficient_evidence",
+    "finished_at": "2026-09-01T10:00:00Z",
+    "error": null,
+    "error_stage": null,
+    "model": null,
+    "prompt_version": "manual-fixture-v1",
+    "schema_version": "0.1",
+    "model_io": [],
+    "memory_inputs": [],
+    "parent_run_id": null,
+    "dossier_version": "dossier-1"
+  },
+  "sources": [
+    {
+      "id": "s-work",
+      "run_id": "run-synthetic",
+      "synthetic": true,
+      "created_at": "2026-09-01T09:00:00Z",
+      "actor": {
+        "kind": "human",
+        "id": "synthetic-operator"
+      },
+      "original_url": "https://research.example/s-work",
+      "final_url": "https://research.example/s-work",
+      "title": "Synthetic source s-work",
+      "kind": "snippet",
+      "publisher": "Synthetic Publisher",
+      "published_at": null,
+      "retrieved_at": "2026-09-01T09:00:00Z",
+      "search_query": "synthetic manual reconciliation",
+      "rank": 1,
+      "method": "search",
+      "text": "Synthetic Company A: «Мы вручную сверяем отчёты каждый месяц». Потери не измеряли. 🧪",
+      "sha256": "df6e0124019484bddc581420c058ac66c812013f3445bd605e4b1a2584d56837",
+      "normalization": "none-codepoints-v1",
+      "truncated": false,
+      "char_limit": 4000,
+      "error": "Synthetic crawl failed; only snippet available.",
+      "origin_key": "origin-work",
+      "dependence": "declared_original",
+      "dependence_note": "Synthetic declaration; independence is not established by a URL.",
+      "trust": "untrusted"
+    }
+  ],
+  "observations": [
+    {
+      "id": "o-work",
+      "run_id": "run-synthetic",
+      "synthetic": true,
+      "created_at": "2026-09-01T09:00:00Z",
+      "actor": {
+        "kind": "human",
+        "id": "synthetic-operator"
+      },
+      "source_id": "s-work",
+      "start": 0,
+      "end": 84,
+      "quote": "Synthetic Company A: «Мы вручную сверяем отчёты каждый месяц». Потери не измеряли. 🧪"
+    }
+  ],
+  "claims": [],
+  "evidence": [],
+  "problems": [],
+  "opportunities": [],
+  "decisions": [],
+  "tests": [],
+  "artifacts": [],
+  "events": [],
+  "feedback": []
+}

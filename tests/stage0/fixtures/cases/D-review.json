@@ -1,0 +1,27 @@
+{
+  "id": "D-review",
+  "title": "TEST без review",
+  "base": "golden.json",
+  "changes": [
+    {
+      "path": [
+        "decisions",
+        0,
+        "review",
+        "sources_reviewed"
+      ],
+      "value": false
+    }
+  ],
+  "expected": {
+    "structure": true,
+    "graph": true,
+    "gate": "denied",
+    "invariant": "T-REVIEW"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "TEST без review"
+  },
+  "reason": "TEST без review"
+}

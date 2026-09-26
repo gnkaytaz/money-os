@@ -1,0 +1,26 @@
+{
+  "id": "E-no-version",
+  "title": "sent без версии",
+  "base": "golden.json",
+  "changes": [
+    {
+      "path": [
+        "events",
+        0,
+        "artifact_id"
+      ],
+      "delete": true
+    }
+  ],
+  "expected": {
+    "structure": false,
+    "graph": false,
+    "gate": "not_requested",
+    "invariant": "S-SHAPE"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "sent без версии"
+  },
+  "reason": "sent без версии"
+}

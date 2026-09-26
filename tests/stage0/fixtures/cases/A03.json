@@ -1,0 +1,17 @@
+{
+  "id": "A03",
+  "title": "Конкретное экономическое число",
+  "base": "candidate.json",
+  "changes": [],
+  "expected": {
+    "structure": true,
+    "graph": true,
+    "gate": "not_requested",
+    "invariant": "G-FACT"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "12.50 USD/hour и 5.00 USD/month — заявленные synthetic ставка и тариф, не потери и не платёж."
+  },
+  "reason": "12.50 USD/hour и 5.00 USD/month — заявленные synthetic ставка и тариф, не потери и не платёж."
+}

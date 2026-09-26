@@ -1,0 +1,27 @@
+{
+  "id": "D-model",
+  "title": "Модель не принимает Decision",
+  "base": "golden.json",
+  "changes": [
+    {
+      "path": [
+        "decisions",
+        0,
+        "actor",
+        "kind"
+      ],
+      "value": "model"
+    }
+  ],
+  "expected": {
+    "structure": true,
+    "graph": false,
+    "gate": "not_requested",
+    "invariant": "G-HUMAN"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "Модель не принимает Decision"
+  },
+  "reason": "Модель не принимает Decision"
+}

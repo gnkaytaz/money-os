@@ -1,0 +1,26 @@
+{
+  "id": "S-bool-int",
+  "title": "Boolean не integer",
+  "base": "candidate.json",
+  "changes": [
+    {
+      "path": [
+        "observations",
+        0,
+        "start"
+      ],
+      "value": false
+    }
+  ],
+  "expected": {
+    "structure": false,
+    "graph": false,
+    "gate": "not_requested",
+    "invariant": "S-TYPE"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "Boolean не integer"
+  },
+  "reason": "Boolean не integer"
+}

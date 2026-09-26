@@ -1,0 +1,28 @@
+{
+  "id": "A14b",
+  "title": "Чужой Claim ID",
+  "base": "candidate.json",
+  "changes": [
+    {
+      "path": [
+        "claims",
+        11,
+        "premises"
+      ],
+      "value": [
+        "other-run/claim"
+      ]
+    }
+  ],
+  "expected": {
+    "structure": true,
+    "graph": false,
+    "gate": "not_requested",
+    "invariant": "G-REF"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "Чужой Claim ID"
+  },
+  "reason": "Чужой Claim ID"
+}

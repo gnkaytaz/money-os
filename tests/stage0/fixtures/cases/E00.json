@@ -1,0 +1,17 @@
+{
+  "id": "E00",
+  "title": "Golden сквозной цикл до rejected/outcome",
+  "base": "golden.json",
+  "changes": [],
+  "expected": {
+    "structure": true,
+    "graph": true,
+    "gate": "allowed",
+    "invariant": "G-EVENT"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "Golden сквозной цикл до rejected/outcome"
+  },
+  "reason": "Golden сквозной цикл до rejected/outcome"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "E-response-without-sent",
+  "title": "Ответ без отправки",
+  "base": "golden.json",
+  "changes": [
+    {
+      "path": [
+        "events"
+      ],
+      "value": [
+        {
+          "id": "event-response",
+          "run_id": "run-synthetic",
+          "synthetic": true,
+          "created_at": "2026-09-01T15:00:00Z",
+          "actor": {
+            "kind": "human",
+            "id": "synthetic-operator"
+          },
+          "test_id": "test-1",
+          "kind": "responded",
+          "occurred_at": "2026-09-01T15:00:00Z",
+          "description": "SYNTHETIC event only; no actual communication, meeting or payment.",
+          "basis": "Synthetic operator fixture record, not independent market evidence.",
+          "correction_of": null,
+          "correction_reason": null,
+          "sent_id": "event-sent",
+          "response": "Synthetic recipient: checklist understood, but we will not buy now."
+        },
+        {
+          "id": "event-rejected",
+          "run_id": "run-synthetic",
+          "synthetic": true,
+          "created_at": "2026-09-01T16:00:00Z",
+          "actor": {
+            "kind": "human",
+            "id": "synthetic-operator"
+          },
+          "test_id": "test-1",
+          "kind": "rejected",
+          "occurred_at": "2026-09-01T16:00:00Z",
+          "description": "SYNTHETIC event only; no actual communication, meeting or payment.",
+          "basis": "Synthetic operator fixture record, not independent market evidence.",
+          "correction_of": null,
+          "correction_reason": null,
+          "sent_id": "event-sent",
+          "responded_id": "event-response",
+          "reason": "Synthetic recipient declines a purchase now; no inference of absent problem."
+        }
+      ]
+    }
+  ],
+  "expected": {
+    "structure": true,
+    "graph": false,
+    "gate": "not_requested",
+    "invariant": "G-REF"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "Ответ без отправки"
+  },
+  "reason": "Ответ без отправки"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "G-arithmetic",
+  "title": "Неверный Decimal результат",
+  "base": "candidate.json",
+  "changes": [
+    {
+      "path": [
+        "claims",
+        7,
+        "formula",
+        "result",
+        "value"
+      ],
+      "value": "51.00"
+    }
+  ],
+  "expected": {
+    "structure": true,
+    "graph": false,
+    "gate": "not_requested",
+    "invariant": "G-ARITHMETIC"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "Неверный Decimal результат"
+  },
+  "reason": "Неверный Decimal результат"
+}

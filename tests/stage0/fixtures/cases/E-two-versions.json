@@ -1,0 +1,18 @@
+{
+  "id": "E-two-versions",
+  "title": "Две immutable версии, отправлена первая",
+  "base": "two_versions.json",
+  "changes": [],
+  "expected": {
+    "structure": true,
+    "graph": true,
+    "gate": "allowed",
+    "invariant": "G-IMMUTABLE"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "Новая версия не меняет artifact-1 или ссылку старого sent."
+  },
+  "reason": "Новая версия не меняет artifact-1 или ссылку старого sent.",
+  "extension_from": "golden.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "A01",
+  "title": "Прямая цитата ручной работы",
+  "base": "candidate.json",
+  "changes": [],
+  "expected": {
+    "structure": true,
+    "graph": true,
+    "gate": "not_requested",
+    "invariant": "G-QUOTE"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "Дословная Unicode цитата ведёт к page snapshot; утверждение ограничено заявлением synthetic компании."
+  },
+  "reason": "Дословная Unicode цитата ведёт к page snapshot; утверждение ограничено заявлением synthetic компании."
+}

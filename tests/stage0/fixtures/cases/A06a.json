@@ -1,0 +1,17 @@
+{
+  "id": "A06a",
+  "title": "Snippet без страницы — валидный недостаточный результат",
+  "base": "snippet_research.json",
+  "changes": [],
+  "expected": {
+    "structure": true,
+    "graph": true,
+    "gate": "not_requested",
+    "invariant": "G-ANCHOR"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "Snippet не повышается до page; нет Opportunity."
+  },
+  "reason": "Snippet не повышается до page; нет Opportunity."
+}

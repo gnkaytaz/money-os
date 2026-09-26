@@ -1,0 +1,26 @@
+{
+  "id": "S-unknown-property",
+  "title": "Unknown property отклоняется",
+  "base": "candidate.json",
+  "changes": [
+    {
+      "path": [
+        "claims",
+        0,
+        "confidence"
+      ],
+      "value": 0.99
+    }
+  ],
+  "expected": {
+    "structure": false,
+    "graph": false,
+    "gate": "not_requested",
+    "invariant": "S-SHAPE"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "Unknown property отклоняется"
+  },
+  "reason": "Unknown property отклоняется"
+}

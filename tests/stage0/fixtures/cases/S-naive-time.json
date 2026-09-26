@@ -1,0 +1,26 @@
+{
+  "id": "S-naive-time",
+  "title": "Timestamp без timezone",
+  "base": "candidate.json",
+  "changes": [
+    {
+      "path": [
+        "sources",
+        0,
+        "retrieved_at"
+      ],
+      "value": "2026-09-01T09:00:00"
+    }
+  ],
+  "expected": {
+    "structure": false,
+    "graph": false,
+    "gate": "not_requested",
+    "invariant": "S-TIME"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "Timestamp без timezone"
+  },
+  "reason": "Timestamp без timezone"
+}

@@ -1,0 +1,121 @@
+{
+  "id": "A09",
+  "title": "Contradictory Evidence сохраняется",
+  "base": "candidate.json",
+  "changes": [
+    {
+      "path": [
+        "evidence"
+      ],
+      "value": [
+        {
+          "id": "e-c-work",
+          "run_id": "run-synthetic",
+          "synthetic": true,
+          "created_at": "2026-09-01T09:00:00Z",
+          "actor": {
+            "kind": "human",
+            "id": "synthetic-operator"
+          },
+          "claim_id": "c-work",
+          "observation_id": "o-work",
+          "relation": "supports",
+          "directness": "direct",
+          "strength": "medium",
+          "relevance": "Fixture oracle: the source explicitly reports this statement, not universal market truth."
+        },
+        {
+          "id": "e-c-hours",
+          "run_id": "run-synthetic",
+          "synthetic": true,
+          "created_at": "2026-09-01T09:00:00Z",
+          "actor": {
+            "kind": "human",
+            "id": "synthetic-operator"
+          },
+          "claim_id": "c-hours",
+          "observation_id": "o-rate",
+          "relation": "supports",
+          "directness": "direct",
+          "strength": "medium",
+          "relevance": "Fixture oracle: the source explicitly reports this statement, not universal market truth."
+        },
+        {
+          "id": "e-c-rate",
+          "run_id": "run-synthetic",
+          "synthetic": true,
+          "created_at": "2026-09-01T09:00:00Z",
+          "actor": {
+            "kind": "human",
+            "id": "synthetic-operator"
+          },
+          "claim_id": "c-rate",
+          "observation_id": "o-rate",
+          "relation": "supports",
+          "directness": "direct",
+          "strength": "medium",
+          "relevance": "Fixture oracle: the source explicitly reports this statement, not universal market truth."
+        },
+        {
+          "id": "e-c-solution",
+          "run_id": "run-synthetic",
+          "synthetic": true,
+          "created_at": "2026-09-01T09:00:00Z",
+          "actor": {
+            "kind": "human",
+            "id": "synthetic-operator"
+          },
+          "claim_id": "c-solution",
+          "observation_id": "o-solution",
+          "relation": "supports",
+          "directness": "direct",
+          "strength": "medium",
+          "relevance": "Fixture oracle: the source explicitly reports this statement, not universal market truth."
+        },
+        {
+          "id": "e-c-gap",
+          "run_id": "run-synthetic",
+          "synthetic": true,
+          "created_at": "2026-09-01T09:00:00Z",
+          "actor": {
+            "kind": "human",
+            "id": "synthetic-operator"
+          },
+          "claim_id": "c-gap",
+          "observation_id": "o-solution",
+          "relation": "supports",
+          "directness": "direct",
+          "strength": "medium",
+          "relevance": "Fixture oracle: the source explicitly reports this statement, not universal market truth."
+        },
+        {
+          "id": "e-contradiction",
+          "run_id": "run-synthetic",
+          "synthetic": true,
+          "created_at": "2026-09-01T09:00:00Z",
+          "actor": {
+            "kind": "human",
+            "id": "synthetic-operator"
+          },
+          "claim_id": "c-work",
+          "observation_id": "o-solution",
+          "relation": "contradicts",
+          "directness": "indirect",
+          "strength": "medium",
+          "relevance": "Cheap existing solution weakens broad manual-work opportunity, not literal existence of reported work."
+        }
+      ]
+    }
+  ],
+  "expected": {
+    "structure": true,
+    "graph": true,
+    "gate": "not_requested",
+    "invariant": "G-REF"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "Положительное и отрицательное отношения сосуществуют; schema не решает спор."
+  },
+  "reason": "Положительное и отрицательное отношения сосуществуют; schema не решает спор."
+}

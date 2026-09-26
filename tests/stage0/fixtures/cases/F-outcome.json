@@ -1,0 +1,17 @@
+{
+  "id": "F-outcome",
+  "title": "Outcome feedback с Event/Test",
+  "base": "golden.json",
+  "changes": [],
+  "expected": {
+    "structure": true,
+    "graph": true,
+    "gate": "allowed",
+    "invariant": "G-FEEDBACK"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "Outcome feedback с Event/Test"
+  },
+  "reason": "Outcome feedback с Event/Test"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "A02",
+  "title": "Дешёвое решение ослабляет Opportunity",
+  "base": "candidate.json",
+  "changes": [],
+  "expected": {
+    "structure": true,
+    "graph": true,
+    "gate": "not_requested",
+    "invariant": "G-REF"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "Тариф является отрицательным аргументом к широкому wedge; остаточный разрыв и objections сохраняются."
+  },
+  "reason": "Тариф является отрицательным аргументом к широкому wedge; остаточный разрыв и objections сохраняются."
+}

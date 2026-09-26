@@ -1,0 +1,17 @@
+{
+  "id": "A04",
+  "title": "Проблема без известной стоимости",
+  "base": "candidate.json",
+  "changes": [],
+  "expected": {
+    "structure": true,
+    "graph": true,
+    "gate": "not_requested",
+    "invariant": "G-UNKNOWN"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "Стоимость unknown не обнуляется и не блокирует дешёвый тест неизвестности."
+  },
+  "reason": "Стоимость unknown не обнуляется и не блокирует дешёвый тест неизвестности."
+}

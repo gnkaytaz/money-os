@@ -1,0 +1,26 @@
+{
+  "id": "A15",
+  "title": "Несуществующая цитата",
+  "base": "candidate.json",
+  "changes": [
+    {
+      "path": [
+        "observations",
+        0,
+        "quote"
+      ],
+      "value": "Этого текста в источнике нет."
+    }
+  ],
+  "expected": {
+    "structure": true,
+    "graph": false,
+    "gate": "not_requested",
+    "invariant": "G-QUOTE"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "Несуществующая цитата"
+  },
+  "reason": "Несуществующая цитата"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "G-missing-input",
+  "title": "Отсутствует операнд",
+  "base": "candidate.json",
+  "changes": [
+    {
+      "path": [
+        "claims",
+        7,
+        "formula",
+        "inputs"
+      ],
+      "value": [
+        {
+          "claim_id": "c-hours",
+          "quantity": {
+            "value": "4",
+            "unit": "hour",
+            "currency": null,
+            "period": "month"
+          }
+        }
+      ]
+    }
+  ],
+  "expected": {
+    "structure": false,
+    "graph": false,
+    "gate": "not_requested",
+    "invariant": "S-FORMULA"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "Отсутствует операнд"
+  },
+  "reason": "Отсутствует операнд"
+}

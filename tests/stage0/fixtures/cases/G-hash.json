@@ -1,0 +1,26 @@
+{
+  "id": "G-hash",
+  "title": "Хеш снимка не совпадает",
+  "base": "candidate.json",
+  "changes": [
+    {
+      "path": [
+        "sources",
+        0,
+        "sha256"
+      ],
+      "value": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  ],
+  "expected": {
+    "structure": true,
+    "graph": false,
+    "gate": "not_requested",
+    "invariant": "G-HASH"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "Хеш снимка не совпадает"
+  },
+  "reason": "Хеш снимка не совпадает"
+}

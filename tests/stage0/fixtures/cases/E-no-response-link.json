@@ -1,0 +1,65 @@
+{
+  "id": "E-no-response-link",
+  "title": "Отказ без responded",
+  "base": "golden.json",
+  "changes": [
+    {
+      "path": [
+        "events"
+      ],
+      "value": [
+        {
+          "id": "event-sent",
+          "run_id": "run-synthetic",
+          "synthetic": true,
+          "created_at": "2026-09-01T14:00:00Z",
+          "actor": {
+            "kind": "human",
+            "id": "synthetic-operator"
+          },
+          "test_id": "test-1",
+          "kind": "sent",
+          "occurred_at": "2026-09-01T14:00:00Z",
+          "description": "SYNTHETIC event only; no actual communication, meeting or payment.",
+          "basis": "Synthetic operator fixture record, not independent market evidence.",
+          "correction_of": null,
+          "correction_reason": null,
+          "artifact_id": "artifact-1",
+          "recipient_alias": "synthetic-recipient",
+          "channel": "manual_email"
+        },
+        {
+          "id": "event-rejected",
+          "run_id": "run-synthetic",
+          "synthetic": true,
+          "created_at": "2026-09-01T16:00:00Z",
+          "actor": {
+            "kind": "human",
+            "id": "synthetic-operator"
+          },
+          "test_id": "test-1",
+          "kind": "rejected",
+          "occurred_at": "2026-09-01T16:00:00Z",
+          "description": "SYNTHETIC event only; no actual communication, meeting or payment.",
+          "basis": "Synthetic operator fixture record, not independent market evidence.",
+          "correction_of": null,
+          "correction_reason": null,
+          "sent_id": "event-sent",
+          "responded_id": "event-response",
+          "reason": "Synthetic recipient declines a purchase now; no inference of absent problem."
+        }
+      ]
+    }
+  ],
+  "expected": {
+    "structure": true,
+    "graph": false,
+    "gate": "not_requested",
+    "invariant": "G-REF"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "Отказ без responded"
+  },
+  "reason": "Отказ без responded"
+}

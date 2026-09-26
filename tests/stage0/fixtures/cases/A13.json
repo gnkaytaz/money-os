@@ -1,0 +1,17 @@
+{
+  "id": "A13",
+  "title": "Unknown без выдуманного значения",
+  "base": "candidate.json",
+  "changes": [],
+  "expected": {
+    "structure": true,
+    "graph": true,
+    "gate": "not_requested",
+    "invariant": "G-UNKNOWN"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "Есть reason/context/next_check; поля value у unknown нет."
+  },
+  "reason": "Есть reason/context/next_check; поля value у unknown нет."
+}

@@ -1,0 +1,27 @@
+{
+  "id": "D-recipient",
+  "title": "TEST без достижимого получателя",
+  "base": "golden.json",
+  "changes": [
+    {
+      "path": [
+        "decisions",
+        0,
+        "review",
+        "recipient_reachable"
+      ],
+      "value": false
+    }
+  ],
+  "expected": {
+    "structure": true,
+    "graph": true,
+    "gate": "denied",
+    "invariant": "T-RECIPIENT"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "TEST без достижимого получателя"
+  },
+  "reason": "TEST без достижимого получателя"
+}

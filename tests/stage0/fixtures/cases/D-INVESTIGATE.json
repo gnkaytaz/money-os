@@ -1,0 +1,141 @@
+{
+  "id": "D-INVESTIGATE",
+  "title": "INVESTIGATE отдельно от рыночного события",
+  "base": "candidate.json",
+  "changes": [
+    {
+      "path": [
+        "decisions"
+      ],
+      "value": [
+        {
+          "id": "decision-1",
+          "run_id": "run-synthetic",
+          "synthetic": true,
+          "created_at": "2026-09-01T11:00:00Z",
+          "actor": {
+            "kind": "human",
+            "id": "synthetic-operator"
+          },
+          "opportunity_id": "opp-1",
+          "action": "INVESTIGATE",
+          "reason": "Hypothetical zero-spend test of residual checklist value and buyer identity.",
+          "dossier_version": "dossier-1",
+          "review": {
+            "claims": [
+              {
+                "claim_id": "c-work",
+                "verdict": "supported",
+                "reason": "Synthetic semantic oracle; limited to stated source context or explicit hypothesis."
+              },
+              {
+                "claim_id": "c-hours",
+                "verdict": "supported",
+                "reason": "Synthetic semantic oracle; limited to stated source context or explicit hypothesis."
+              },
+              {
+                "claim_id": "c-rate",
+                "verdict": "supported",
+                "reason": "Synthetic semantic oracle; limited to stated source context or explicit hypothesis."
+              },
+              {
+                "claim_id": "c-solution",
+                "verdict": "supported",
+                "reason": "Synthetic semantic oracle; limited to stated source context or explicit hypothesis."
+              },
+              {
+                "claim_id": "c-gap",
+                "verdict": "supported",
+                "reason": "Synthetic semantic oracle; limited to stated source context or explicit hypothesis."
+              },
+              {
+                "claim_id": "c-cost",
+                "verdict": "unknown",
+                "reason": "Synthetic semantic oracle; limited to stated source context or explicit hypothesis."
+              },
+              {
+                "claim_id": "c-buyer",
+                "verdict": "unknown",
+                "reason": "Synthetic semantic oracle; limited to stated source context or explicit hypothesis."
+              },
+              {
+                "claim_id": "c-estimate",
+                "verdict": "conditional",
+                "reason": "Synthetic semantic oracle; limited to stated source context or explicit hypothesis."
+              },
+              {
+                "claim_id": "c-segment",
+                "verdict": "conditional",
+                "reason": "Synthetic semantic oracle; limited to stated source context or explicit hypothesis."
+              },
+              {
+                "claim_id": "c-bearer",
+                "verdict": "conditional",
+                "reason": "Synthetic semantic oracle; limited to stated source context or explicit hypothesis."
+              },
+              {
+                "claim_id": "c-reachable",
+                "verdict": "conditional",
+                "reason": "Synthetic semantic oracle; limited to stated source context or explicit hypothesis."
+              },
+              {
+                "claim_id": "c-value",
+                "verdict": "conditional",
+                "reason": "Synthetic semantic oracle; limited to stated source context or explicit hypothesis."
+              },
+              {
+                "claim_id": "c-wedge",
+                "verdict": "conditional",
+                "reason": "Synthetic semantic oracle; limited to stated source context or explicit hypothesis."
+              },
+              {
+                "claim_id": "c-next",
+                "verdict": "conditional",
+                "reason": "Synthetic semantic oracle; limited to stated source context or explicit hypothesis."
+              },
+              {
+                "claim_id": "c-success",
+                "verdict": "conditional",
+                "reason": "Synthetic semantic oracle; limited to stated source context or explicit hypothesis."
+              },
+              {
+                "claim_id": "c-kill",
+                "verdict": "conditional",
+                "reason": "Synthetic semantic oracle; limited to stated source context or explicit hypothesis."
+              },
+              {
+                "claim_id": "c-objections",
+                "verdict": "conditional",
+                "reason": "Synthetic semantic oracle; limited to stated source context or explicit hypothesis."
+              }
+            ],
+            "sources_reviewed": true,
+            "contradictions_reviewed": true,
+            "risks_accepted": true,
+            "problem_supported": true,
+            "existing_solution": "inadequate",
+            "residual_gap_verified": true,
+            "gap_claim_ids": [
+              "c-gap"
+            ],
+            "recipient_reachable": true,
+            "buyer_strategy": "Budget authority remains unknown; the reachable hypothetical user will identify the buyer. Zero-spend discovery test is about this uncertainty.",
+            "explanation": "Synthetic attestation: manual problem and residual missing-row gap reviewed; no economic completeness threshold or real fact asserted."
+          },
+          "plan": null
+        }
+      ]
+    }
+  ],
+  "expected": {
+    "structure": true,
+    "graph": true,
+    "gate": "not_requested",
+    "invariant": "G-HUMAN"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "INVESTIGATE отдельно от рыночного события"
+  },
+  "reason": "INVESTIGATE отдельно от рыночного события"
+}

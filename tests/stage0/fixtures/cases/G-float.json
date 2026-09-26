@@ -1,0 +1,28 @@
+{
+  "id": "G-float",
+  "title": "Число float вместо Decimal строки",
+  "base": "candidate.json",
+  "changes": [
+    {
+      "path": [
+        "claims",
+        7,
+        "formula",
+        "result",
+        "value"
+      ],
+      "value": 50.0
+    }
+  ],
+  "expected": {
+    "structure": false,
+    "graph": false,
+    "gate": "not_requested",
+    "invariant": "S-TYPE"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "Число float вместо Decimal строки"
+  },
+  "reason": "Число float вместо Decimal строки"
+}

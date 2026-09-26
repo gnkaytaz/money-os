@@ -1,0 +1,38 @@
+{
+  "id": "A16",
+  "title": "Цикл Claims",
+  "base": "candidate.json",
+  "changes": [
+    {
+      "path": [
+        "claims",
+        11,
+        "premises"
+      ],
+      "value": [
+        "c-next"
+      ]
+    },
+    {
+      "path": [
+        "claims",
+        13,
+        "premises"
+      ],
+      "value": [
+        "c-value"
+      ]
+    }
+  ],
+  "expected": {
+    "structure": true,
+    "graph": false,
+    "gate": "not_requested",
+    "invariant": "G-DAG"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "Цикл Claims"
+  },
+  "reason": "Цикл Claims"
+}

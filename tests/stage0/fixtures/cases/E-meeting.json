@@ -1,0 +1,72 @@
+{
+  "id": "E-meeting",
+  "title": "Вариант meeting",
+  "base": "golden.json",
+  "changes": [
+    {
+      "path": [
+        "events"
+      ],
+      "value": [
+        {
+          "id": "event-sent",
+          "run_id": "run-synthetic",
+          "synthetic": true,
+          "created_at": "2026-09-01T14:00:00Z",
+          "actor": {
+            "kind": "human",
+            "id": "synthetic-operator"
+          },
+          "test_id": "test-1",
+          "kind": "sent",
+          "occurred_at": "2026-09-01T14:00:00Z",
+          "description": "SYNTHETIC event only; no actual communication, meeting or payment.",
+          "basis": "Synthetic operator fixture record, not independent market evidence.",
+          "correction_of": null,
+          "correction_reason": null,
+          "artifact_id": "artifact-1",
+          "recipient_alias": "synthetic-recipient",
+          "channel": "manual_email"
+        },
+        {
+          "id": "event-meeting",
+          "run_id": "run-synthetic",
+          "synthetic": true,
+          "created_at": "2026-09-01T16:00:00Z",
+          "actor": {
+            "kind": "human",
+            "id": "synthetic-operator"
+          },
+          "test_id": "test-1",
+          "kind": "meeting",
+          "occurred_at": "2026-09-01T16:00:00Z",
+          "description": "SYNTHETIC event only; no actual communication, meeting or payment.",
+          "basis": "Synthetic operator fixture record, not independent market evidence.",
+          "correction_of": null,
+          "correction_reason": null,
+          "sent_id": "event-sent",
+          "status": "scheduled",
+          "meeting_at": "2026-09-02T12:00:00Z",
+          "agreement": "Synthetic recipient hypothetically agrees to a meeting."
+        }
+      ]
+    },
+    {
+      "path": [
+        "feedback"
+      ],
+      "value": []
+    }
+  ],
+  "expected": {
+    "structure": true,
+    "graph": true,
+    "gate": "allowed",
+    "invariant": "G-EVENT"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "Вариант meeting"
+  },
+  "reason": "Вариант meeting"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "A12",
+  "title": "Оценка с unknown входом запрещена",
+  "base": "candidate.json",
+  "changes": [
+    {
+      "path": [
+        "claims",
+        7,
+        "formula",
+        "inputs",
+        0,
+        "claim_id"
+      ],
+      "value": "c-cost"
+    }
+  ],
+  "expected": {
+    "structure": true,
+    "graph": false,
+    "gate": "not_requested",
+    "invariant": "G-ESTIMATE-INPUT"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "Оценка с unknown входом запрещена"
+  },
+  "reason": "Оценка с unknown входом запрещена"
+}

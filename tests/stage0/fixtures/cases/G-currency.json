@@ -1,0 +1,28 @@
+{
+  "id": "G-currency",
+  "title": "Смешение валют",
+  "base": "candidate.json",
+  "changes": [
+    {
+      "path": [
+        "claims",
+        7,
+        "formula",
+        "result",
+        "currency"
+      ],
+      "value": "EUR"
+    }
+  ],
+  "expected": {
+    "structure": true,
+    "graph": false,
+    "gate": "not_requested",
+    "invariant": "G-UNITS"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "Смешение валют"
+  },
+  "reason": "Смешение валют"
+}

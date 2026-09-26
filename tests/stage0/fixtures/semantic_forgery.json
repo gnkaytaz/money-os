@@ -1,0 +1,939 @@
+{
+  "contract_version": "0.1",
+  "run": {
+    "id": "run-synthetic",
+    "synthetic": true,
+    "created_at": "2026-09-01T08:00:00Z",
+    "actor": {
+      "kind": "human",
+      "id": "synthetic-operator"
+    },
+    "query": {
+      "question": "Would a missing-row checklist help synthetic Company A?",
+      "segment": "Synthetic accounting teams",
+      "constraints": [
+        "Synthetic only; no network, transmission or real contacts."
+      ],
+      "primary_search": "synthetic manual reconciliation",
+      "counter_search": "synthetic reconciliation existing solution",
+      "search_limit": 8,
+      "page_limit": 5
+    },
+    "state": "completed",
+    "finished_at": "2026-09-01T10:00:00Z",
+    "error": null,
+    "error_stage": null,
+    "model": null,
+    "prompt_version": "manual-fixture-v1",
+    "schema_version": "0.1",
+    "model_io": [],
+    "memory_inputs": [],
+    "parent_run_id": null,
+    "dossier_version": "dossier-1"
+  },
+  "sources": [
+    {
+      "id": "s-work",
+      "run_id": "run-synthetic",
+      "synthetic": true,
+      "created_at": "2026-09-01T09:00:00Z",
+      "actor": {
+        "kind": "human",
+        "id": "synthetic-operator"
+      },
+      "original_url": "https://research.example/s-work",
+      "final_url": "https://research.example/s-work",
+      "title": "Synthetic source s-work",
+      "kind": "page",
+      "publisher": "Synthetic Publisher",
+      "published_at": null,
+      "retrieved_at": "2026-09-01T09:00:00Z",
+      "search_query": "synthetic manual reconciliation",
+      "rank": 1,
+      "method": "manual_snapshot",
+      "text": "Synthetic Company A: «Мы вручную сверяем отчёты каждый месяц». Потери не измеряли. 🧪",
+      "sha256": "df6e0124019484bddc581420c058ac66c812013f3445bd605e4b1a2584d56837",
+      "normalization": "none-codepoints-v1",
+      "truncated": false,
+      "char_limit": 4000,
+      "error": null,
+      "origin_key": "origin-work",
+      "dependence": "declared_original",
+      "dependence_note": "Synthetic declaration; independence is not established by a URL.",
+      "trust": "untrusted"
+    },
+    {
+      "id": "s-rate",
+      "run_id": "run-synthetic",
+      "synthetic": true,
+      "created_at": "2026-09-01T09:00:00Z",
+      "actor": {
+        "kind": "human",
+        "id": "synthetic-operator"
+      },
+      "original_url": "https://research.example/s-rate",
+      "final_url": "https://research.example/s-rate",
+      "title": "Synthetic source s-rate",
+      "kind": "page",
+      "publisher": "Synthetic Publisher",
+      "published_at": null,
+      "retrieved_at": "2026-09-01T09:00:00Z",
+      "search_query": "synthetic manual reconciliation",
+      "rank": 2,
+      "method": "manual_snapshot",
+      "text": "Synthetic Company A reports 4 hours per month of reconciliation and an accounting rate of 12.50 USD per hour. These are synthetic numbers, not measured market data.",
+      "sha256": "13853f24dfa5d926ffcf0246bea93dac825d06f0d7f93d9539ef6a15d7d44bbb",
+      "normalization": "none-codepoints-v1",
+      "truncated": false,
+      "char_limit": 4000,
+      "error": null,
+      "origin_key": "origin-rate",
+      "dependence": "declared_original",
+      "dependence_note": "Synthetic declaration; independence is not established by a URL.",
+      "trust": "untrusted"
+    },
+    {
+      "id": "s-solution",
+      "run_id": "run-synthetic",
+      "synthetic": true,
+      "created_at": "2026-09-01T09:00:00Z",
+      "actor": {
+        "kind": "human",
+        "id": "synthetic-operator"
+      },
+      "original_url": "https://research.example/s-solution",
+      "final_url": "https://research.example/s-solution",
+      "title": "Synthetic source s-solution",
+      "kind": "page",
+      "publisher": "Synthetic Publisher",
+      "published_at": null,
+      "retrieved_at": "2026-09-01T09:00:00Z",
+      "search_query": "synthetic reconciliation existing solution",
+      "rank": 3,
+      "method": "manual_snapshot",
+      "text": "Synthetic Vendor B offers reconciliation at 5.00 USD per month. Company A says the tool does not flag missing rows; a manual gap checklist remains useful.",
+      "sha256": "0dd5e5ecf059cc31db6333d7f0b3cc48111cc8d1d8811a17de83e104b16661f1",
+      "normalization": "none-codepoints-v1",
+      "truncated": false,
+      "char_limit": 4000,
+      "error": null,
+      "origin_key": "origin-solution",
+      "dependence": "declared_original",
+      "dependence_note": "Synthetic declaration; independence is not established by a URL.",
+      "trust": "untrusted"
+    }
+  ],
+  "observations": [
+    {
+      "id": "o-work",
+      "run_id": "run-synthetic",
+      "synthetic": true,
+      "created_at": "2026-09-01T09:00:00Z",
+      "actor": {
+        "kind": "human",
+        "id": "synthetic-operator"
+      },
+      "source_id": "s-work",
+      "start": 0,
+      "end": 84,
+      "quote": "Synthetic Company A: «Мы вручную сверяем отчёты каждый месяц». Потери не измеряли. 🧪"
+    },
+    {
+      "id": "o-rate",
+      "run_id": "run-synthetic",
+      "synthetic": true,
+      "created_at": "2026-09-01T09:00:00Z",
+      "actor": {
+        "kind": "human",
+        "id": "synthetic-operator"
+      },
+      "source_id": "s-rate",
+      "start": 0,
+      "end": 164,
+      "quote": "Synthetic Company A reports 4 hours per month of reconciliation and an accounting rate of 12.50 USD per hour. These are synthetic numbers, not measured market data."
+    },
+    {
+      "id": "o-solution",
+      "run_id": "run-synthetic",
+      "synthetic": true,
+      "created_at": "2026-09-01T09:00:00Z",
+      "actor": {
+        "kind": "human",
+        "id": "synthetic-operator"
+      },
+      "source_id": "s-solution",
+      "start": 0,
+      "end": 154,
+      "quote": "Synthetic Vendor B offers reconciliation at 5.00 USD per month. Company A says the tool does not flag missing rows; a manual gap checklist remains useful."
+    }
+  ],
+  "claims": [
+    {
+      "id": "c-work",
+      "run_id": "run-synthetic",
+      "synthetic": true,
+      "created_at": "2026-09-01T09:00:00Z",
+      "actor": {
+        "kind": "human",
+        "id": "synthetic-operator"
+      },
+      "kind": "fact",
+      "text": "Synthetic Company A reports monthly manual reconciliation.",
+      "scope": "Only the synthetic Company A scenario; no market generalization.",
+      "limitations": [
+        "Entirely synthetic scenario; human assertion is not external verification."
+      ],
+      "next_check": "Ask the synthetic role in a hypothetical manual test; no transmission.",
+      "quantity": null
+    },
+    {
+      "id": "c-hours",
+      "run_id": "run-synthetic",
+      "synthetic": true,
+      "created_at": "2026-09-01T09:00:00Z",
+      "actor": {
+        "kind": "human",
+        "id": "synthetic-operator"
+      },
+      "kind": "fact",
+      "text": "Synthetic Company A reports 4 hours per month.",
+      "scope": "Only the synthetic Company A scenario; no market generalization.",
+      "limitations": [
+        "Entirely synthetic scenario; human assertion is not external verification."
+      ],
+      "next_check": "Ask the synthetic role in a hypothetical manual test; no transmission.",
+      "quantity": {
+        "value": "4",
+        "unit": "hour",
+        "currency": null,
+        "period": "month"
+      }
+    },
+    {
+      "id": "c-rate",
+      "run_id": "run-synthetic",
+      "synthetic": true,
+      "created_at": "2026-09-01T09:00:00Z",
+      "actor": {
+        "kind": "human",
+        "id": "synthetic-operator"
+      },
+      "kind": "fact",
+      "text": "Synthetic Company A loses 999999 USD every month.",
+      "scope": "Only the synthetic Company A scenario; no market generalization.",
+      "limitations": [
+        "Entirely synthetic scenario; human assertion is not external verification."
+      ],
+      "next_check": "Ask the synthetic role in a hypothetical manual test; no transmission.",
+      "quantity": {
+        "value": "999999",
+        "unit": "money",
+        "currency": "USD",
+        "period": "month"
+      }
+    },
+    {
+      "id": "c-solution",
+      "run_id": "run-synthetic",
+      "synthetic": true,
+      "created_at": "2026-09-01T09:00:00Z",
+      "actor": {
+        "kind": "human",
+        "id": "synthetic-operator"
+      },
+      "kind": "fact",
+      "text": "Synthetic Vendor B advertises a 5.00 USD monthly tariff, not an observed payment.",
+      "scope": "Only the synthetic Company A scenario; no market generalization.",
+      "limitations": [
+        "Entirely synthetic scenario; human assertion is not external verification."
+      ],
+      "next_check": "Ask the synthetic role in a hypothetical manual test; no transmission.",
+      "quantity": {
+        "value": "5.00",
+        "unit": "money",
+        "currency": "USD",
+        "period": "month"
+      }
+    },
+    {
+      "id": "c-gap",
+      "run_id": "run-synthetic",
+      "synthetic": true,
+      "created_at": "2026-09-01T09:00:00Z",
+      "actor": {
+        "kind": "human",
+        "id": "synthetic-operator"
+      },
+      "kind": "fact",
+      "text": "Synthetic Company A reports missing-row detection is absent from the existing tool.",
+      "scope": "Only the synthetic Company A scenario; no market generalization.",
+      "limitations": [
+        "Entirely synthetic scenario; human assertion is not external verification."
+      ],
+      "next_check": "Ask the synthetic role in a hypothetical manual test; no transmission.",
+      "quantity": null
+    },
+    {
+      "id": "c-cost",
+      "run_id": "run-synthetic",
+      "synthetic": true,
+      "created_at": "2026-09-01T09:00:00Z",
+      "actor": {
+        "kind": "human",
+        "id": "synthetic-operator"
+      },
+      "kind": "unknown",
+      "text": "Actual monetary loss is unknown.",
+      "scope": "Only the synthetic Company A scenario; no market generalization.",
+      "limitations": [
+        "Entirely synthetic scenario; human assertion is not external verification."
+      ],
+      "next_check": "Ask the synthetic role in a hypothetical manual test; no transmission.",
+      "reason": "Hours and accounting rate do not establish avoidable loss.",
+      "context_claims": [
+        "c-work"
+      ],
+      "context_sources": [
+        "s-work"
+      ]
+    },
+    {
+      "id": "c-buyer",
+      "run_id": "run-synthetic",
+      "synthetic": true,
+      "created_at": "2026-09-01T09:00:00Z",
+      "actor": {
+        "kind": "human",
+        "id": "synthetic-operator"
+      },
+      "kind": "unknown",
+      "text": "Budget authority of the hypothetical recipient is unknown.",
+      "scope": "Only the synthetic Company A scenario; no market generalization.",
+      "limitations": [
+        "Entirely synthetic scenario; human assertion is not external verification."
+      ],
+      "next_check": "Ask the synthetic role in a hypothetical manual test; no transmission.",
+      "reason": "No procurement evidence.",
+      "context_claims": [
+        "c-work"
+      ],
+      "context_sources": []
+    },
+    {
+      "id": "c-segment",
+      "run_id": "run-synthetic",
+      "synthetic": true,
+      "created_at": "2026-09-01T09:00:00Z",
+      "actor": {
+        "kind": "human",
+        "id": "synthetic-operator"
+      },
+      "kind": "inference",
+      "text": "Hypothesis: synthetic small accounting team.",
+      "scope": "Only the synthetic Company A scenario; no market generalization.",
+      "limitations": [
+        "Entirely synthetic scenario; human assertion is not external verification."
+      ],
+      "next_check": "Ask the synthetic role in a hypothetical manual test; no transmission.",
+      "premises": [
+        "c-work"
+      ],
+      "rationale": "Conditional human hypothesis from the cited synthetic premises; not an observed market outcome.",
+      "falsifier": "Recipient reports no residual problem or no useful result."
+    },
+    {
+      "id": "c-bearer",
+      "run_id": "run-synthetic",
+      "synthetic": true,
+      "created_at": "2026-09-01T09:00:00Z",
+      "actor": {
+        "kind": "human",
+        "id": "synthetic-operator"
+      },
+      "kind": "inference",
+      "text": "Hypothesis: Company A operations bears the work.",
+      "scope": "Only the synthetic Company A scenario; no market generalization.",
+      "limitations": [
+        "Entirely synthetic scenario; human assertion is not external verification."
+      ],
+      "next_check": "Ask the synthetic role in a hypothetical manual test; no transmission.",
+      "premises": [
+        "c-work"
+      ],
+      "rationale": "Conditional human hypothesis from the cited synthetic premises; not an observed market outcome.",
+      "falsifier": "Recipient reports no residual problem or no useful result."
+    },
+    {
+      "id": "c-reachable",
+      "run_id": "run-synthetic",
+      "synthetic": true,
+      "created_at": "2026-09-01T09:00:00Z",
+      "actor": {
+        "kind": "human",
+        "id": "synthetic-operator"
+      },
+      "kind": "inference",
+      "text": "Operator proposes a hypothetical manual role contact; no real address.",
+      "scope": "Only the synthetic Company A scenario; no market generalization.",
+      "limitations": [
+        "Entirely synthetic scenario; human assertion is not external verification."
+      ],
+      "next_check": "Ask the synthetic role in a hypothetical manual test; no transmission.",
+      "premises": [
+        "c-work"
+      ],
+      "rationale": "Conditional human hypothesis from the cited synthetic premises; not an observed market outcome.",
+      "falsifier": "Recipient reports no residual problem or no useful result."
+    },
+    {
+      "id": "c-value",
+      "run_id": "run-synthetic",
+      "synthetic": true,
+      "created_at": "2026-09-01T09:00:00Z",
+      "actor": {
+        "kind": "human",
+        "id": "synthetic-operator"
+      },
+      "kind": "inference",
+      "text": "A missing-row checklist could help the hypothetical recipient.",
+      "scope": "Only the synthetic Company A scenario; no market generalization.",
+      "limitations": [
+        "Entirely synthetic scenario; human assertion is not external verification."
+      ],
+      "next_check": "Ask the synthetic role in a hypothetical manual test; no transmission.",
+      "premises": [
+        "c-work",
+        "c-gap"
+      ],
+      "rationale": "Conditional human hypothesis from the cited synthetic premises; not an observed market outcome.",
+      "falsifier": "Recipient reports no residual problem or no useful result."
+    },
+    {
+      "id": "c-wedge",
+      "run_id": "run-synthetic",
+      "synthetic": true,
+      "created_at": "2026-09-01T09:00:00Z",
+      "actor": {
+        "kind": "human",
+        "id": "synthetic-operator"
+      },
+      "kind": "inference",
+      "text": "Only missing-row review, not a reconciliation platform.",
+      "scope": "Only the synthetic Company A scenario; no market generalization.",
+      "limitations": [
+        "Entirely synthetic scenario; human assertion is not external verification."
+      ],
+      "next_check": "Ask the synthetic role in a hypothetical manual test; no transmission.",
+      "premises": [
+        "c-gap",
+        "c-solution"
+      ],
+      "rationale": "Conditional human hypothesis from the cited synthetic premises; not an observed market outcome.",
+      "falsifier": "Recipient reports no residual problem or no useful result."
+    },
+    {
+      "id": "c-next",
+      "run_id": "run-synthetic",
+      "synthetic": true,
+      "created_at": "2026-09-01T09:00:00Z",
+      "actor": {
+        "kind": "human",
+        "id": "synthetic-operator"
+      },
+      "kind": "inference",
+      "text": "Ask whether a useful checklist changes reconciliation and who controls budget.",
+      "scope": "Only the synthetic Company A scenario; no market generalization.",
+      "limitations": [
+        "Entirely synthetic scenario; human assertion is not external verification."
+      ],
+      "next_check": "Ask the synthetic role in a hypothetical manual test; no transmission.",
+      "premises": [
+        "c-buyer",
+        "c-value"
+      ],
+      "rationale": "Conditional human hypothesis from the cited synthetic premises; not an observed market outcome.",
+      "falsifier": "Recipient reports no residual problem or no useful result."
+    },
+    {
+      "id": "c-success",
+      "run_id": "run-synthetic",
+      "synthetic": true,
+      "created_at": "2026-09-01T09:00:00Z",
+      "actor": {
+        "kind": "human",
+        "id": "synthetic-operator"
+      },
+      "kind": "inference",
+      "text": "Hypothesis test succeeds if recipient names a useful missing-row check.",
+      "scope": "Only the synthetic Company A scenario; no market generalization.",
+      "limitations": [
+        "Entirely synthetic scenario; human assertion is not external verification."
+      ],
+      "next_check": "Ask the synthetic role in a hypothetical manual test; no transmission.",
+      "premises": [
+        "c-value"
+      ],
+      "rationale": "Conditional human hypothesis from the cited synthetic premises; not an observed market outcome.",
+      "falsifier": "Recipient reports no residual problem or no useful result."
+    },
+    {
+      "id": "c-kill",
+      "run_id": "run-synthetic",
+      "synthetic": true,
+      "created_at": "2026-09-01T09:00:00Z",
+      "actor": {
+        "kind": "human",
+        "id": "synthetic-operator"
+      },
+      "kind": "inference",
+      "text": "Stop if existing tool already covers missing rows or recipient sees no value.",
+      "scope": "Only the synthetic Company A scenario; no market generalization.",
+      "limitations": [
+        "Entirely synthetic scenario; human assertion is not external verification."
+      ],
+      "next_check": "Ask the synthetic role in a hypothetical manual test; no transmission.",
+      "premises": [
+        "c-solution",
+        "c-gap"
+      ],
+      "rationale": "Conditional human hypothesis from the cited synthetic premises; not an observed market outcome.",
+      "falsifier": "Recipient reports no residual problem or no useful result."
+    },
+    {
+      "id": "c-objections",
+      "run_id": "run-synthetic",
+      "synthetic": true,
+      "created_at": "2026-09-01T09:00:00Z",
+      "actor": {
+        "kind": "human",
+        "id": "synthetic-operator"
+      },
+      "kind": "inference",
+      "text": "Cheap existing solution weakens the broad opportunity; only the residual gap is testable.",
+      "scope": "Only the synthetic Company A scenario; no market generalization.",
+      "limitations": [
+        "Entirely synthetic scenario; human assertion is not external verification."
+      ],
+      "next_check": "Ask the synthetic role in a hypothetical manual test; no transmission.",
+      "premises": [
+        "c-solution",
+        "c-gap"
+      ],
+      "rationale": "Conditional human hypothesis from the cited synthetic premises; not an observed market outcome.",
+      "falsifier": "Recipient reports no residual problem or no useful result."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "e-c-work",
+      "run_id": "run-synthetic",
+      "synthetic": true,
+      "created_at": "2026-09-01T09:00:00Z",
+      "actor": {
+        "kind": "human",
+        "id": "synthetic-operator"
+      },
+      "claim_id": "c-work",
+      "observation_id": "o-work",
+      "relation": "supports",
+      "directness": "direct",
+      "strength": "medium",
+      "relevance": "Fixture oracle: the source explicitly reports this statement, not universal market truth."
+    },
+    {
+      "id": "e-c-hours",
+      "run_id": "run-synthetic",
+      "synthetic": true,
+      "created_at": "2026-09-01T09:00:00Z",
+      "actor": {
+        "kind": "human",
+        "id": "synthetic-operator"
+      },
+      "claim_id": "c-hours",
+      "observation_id": "o-rate",
+      "relation": "supports",
+      "directness": "direct",
+      "strength": "medium",
+      "relevance": "Fixture oracle: the source explicitly reports this statement, not universal market truth."
+    },
+    {
+      "id": "e-c-rate",
+      "run_id": "run-synthetic",
+      "synthetic": true,
+      "created_at": "2026-09-01T09:00:00Z",
+      "actor": {
+        "kind": "human",
+        "id": "synthetic-operator"
+      },
+      "claim_id": "c-rate",
+      "observation_id": "o-rate",
+      "relation": "supports",
+      "directness": "direct",
+      "strength": "medium",
+      "relevance": "Fixture oracle: the source explicitly reports this statement, not universal market truth."
+    },
+    {
+      "id": "e-c-solution",
+      "run_id": "run-synthetic",
+      "synthetic": true,
+      "created_at": "2026-09-01T09:00:00Z",
+      "actor": {
+        "kind": "human",
+        "id": "synthetic-operator"
+      },
+      "claim_id": "c-solution",
+      "observation_id": "o-solution",
+      "relation": "supports",
+      "directness": "direct",
+      "strength": "medium",
+      "relevance": "Fixture oracle: the source explicitly reports this statement, not universal market truth."
+    },
+    {
+      "id": "e-c-gap",
+      "run_id": "run-synthetic",
+      "synthetic": true,
+      "created_at": "2026-09-01T09:00:00Z",
+      "actor": {
+        "kind": "human",
+        "id": "synthetic-operator"
+      },
+      "claim_id": "c-gap",
+      "observation_id": "o-solution",
+      "relation": "supports",
+      "directness": "direct",
+      "strength": "medium",
+      "relevance": "Fixture oracle: the source explicitly reports this statement, not universal market truth."
+    }
+  ],
+  "problems": [
+    {
+      "id": "problem-1",
+      "run_id": "run-synthetic",
+      "synthetic": true,
+      "created_at": "2026-09-01T09:00:00Z",
+      "actor": {
+        "kind": "human",
+        "id": "synthetic-operator"
+      },
+      "fields": {
+        "discrepancy": "c-work",
+        "segment": "c-segment",
+        "bearer": "c-bearer",
+        "cost": "c-cost",
+        "frequency": "c-work",
+        "workaround": "c-solution",
+        "gap": "c-gap"
+      }
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "opp-1",
+      "run_id": "run-synthetic",
+      "synthetic": true,
+      "created_at": "2026-09-01T09:00:00Z",
+      "actor": {
+        "kind": "human",
+        "id": "synthetic-operator"
+      },
+      "problem_id": "problem-1",
+      "completeness": "incomplete_candidate",
+      "fields": {
+        "buyer": "c-buyer",
+        "reachable_buyer": "c-reachable",
+        "valuable_result": "c-value",
+        "wedge": "c-wedge",
+        "key_unknown": "c-cost",
+        "next_test": "c-next",
+        "success": "c-success",
+        "kill": "c-kill",
+        "objections": "c-objections",
+        "existing_solution": "c-solution"
+      }
+    }
+  ],
+  "decisions": [
+    {
+      "id": "decision-1",
+      "run_id": "run-synthetic",
+      "synthetic": true,
+      "created_at": "2026-09-01T11:00:00Z",
+      "actor": {
+        "kind": "human",
+        "id": "synthetic-operator"
+      },
+      "opportunity_id": "opp-1",
+      "action": "TEST",
+      "reason": "Hypothetical zero-spend test of residual checklist value and buyer identity.",
+      "dossier_version": "dossier-1",
+      "review": {
+        "claims": [
+          {
+            "claim_id": "c-work",
+            "verdict": "supported",
+            "reason": "Synthetic semantic oracle; limited to stated source context or explicit hypothesis."
+          },
+          {
+            "claim_id": "c-hours",
+            "verdict": "supported",
+            "reason": "Synthetic semantic oracle; limited to stated source context or explicit hypothesis."
+          },
+          {
+            "claim_id": "c-rate",
+            "verdict": "unsupported",
+            "reason": "The cited page says hourly accounting rate, not monthly loss; amount fabricated."
+          },
+          {
+            "claim_id": "c-solution",
+            "verdict": "supported",
+            "reason": "Synthetic semantic oracle; limited to stated source context or explicit hypothesis."
+          },
+          {
+            "claim_id": "c-gap",
+            "verdict": "supported",
+            "reason": "Synthetic semantic oracle; limited to stated source context or explicit hypothesis."
+          },
+          {
+            "claim_id": "c-cost",
+            "verdict": "unknown",
+            "reason": "Synthetic semantic oracle; limited to stated source context or explicit hypothesis."
+          },
+          {
+            "claim_id": "c-buyer",
+            "verdict": "unknown",
+            "reason": "Synthetic semantic oracle; limited to stated source context or explicit hypothesis."
+          },
+          {
+            "claim_id": "c-segment",
+            "verdict": "conditional",
+            "reason": "Synthetic semantic oracle; limited to stated source context or explicit hypothesis."
+          },
+          {
+            "claim_id": "c-bearer",
+            "verdict": "conditional",
+            "reason": "Synthetic semantic oracle; limited to stated source context or explicit hypothesis."
+          },
+          {
+            "claim_id": "c-reachable",
+            "verdict": "conditional",
+            "reason": "Synthetic semantic oracle; limited to stated source context or explicit hypothesis."
+          },
+          {
+            "claim_id": "c-value",
+            "verdict": "conditional",
+            "reason": "Synthetic semantic oracle; limited to stated source context or explicit hypothesis."
+          },
+          {
+            "claim_id": "c-wedge",
+            "verdict": "conditional",
+            "reason": "Synthetic semantic oracle; limited to stated source context or explicit hypothesis."
+          },
+          {
+            "claim_id": "c-next",
+            "verdict": "conditional",
+            "reason": "Synthetic semantic oracle; limited to stated source context or explicit hypothesis."
+          },
+          {
+            "claim_id": "c-success",
+            "verdict": "conditional",
+            "reason": "Synthetic semantic oracle; limited to stated source context or explicit hypothesis."
+          },
+          {
+            "claim_id": "c-kill",
+            "verdict": "conditional",
+            "reason": "Synthetic semantic oracle; limited to stated source context or explicit hypothesis."
+          },
+          {
+            "claim_id": "c-objections",
+            "verdict": "conditional",
+            "reason": "Synthetic semantic oracle; limited to stated source context or explicit hypothesis."
+          }
+        ],
+        "sources_reviewed": true,
+        "contradictions_reviewed": true,
+        "risks_accepted": true,
+        "problem_supported": true,
+        "existing_solution": "inadequate",
+        "residual_gap_verified": true,
+        "gap_claim_ids": [
+          "c-gap"
+        ],
+        "recipient_reachable": true,
+        "buyer_strategy": "Budget authority remains unknown; the reachable hypothetical user will identify the buyer. Zero-spend discovery test is about this uncertainty.",
+        "explanation": "Synthetic attestation: manual problem and residual missing-row gap reviewed; no economic completeness threshold or real fact asserted."
+      },
+      "plan": {
+        "hypothesis_claim": "c-next",
+        "useful_result_claim": "c-value",
+        "recipient": {
+          "alias": "synthetic-recipient",
+          "role": "Synthetic operations reviewer, budget authority unknown",
+          "organization": "Synthetic Company A",
+          "synthetic": true
+        },
+        "channel": "manual_email",
+        "artifact_plan": "Prepare a short synthetic missing-row checklist with explicit unknown cost, no savings promise.",
+        "success_claim": "c-success",
+        "kill_claim": "c-kill",
+        "spend_limit": {
+          "value": "0.00",
+          "unit": "money",
+          "currency": "USD",
+          "period": "one_time"
+        },
+        "response_deadline": "2026-09-03T12:00:00Z"
+      }
+    }
+  ],
+  "tests": [
+    {
+      "id": "test-1",
+      "run_id": "run-synthetic",
+      "synthetic": true,
+      "created_at": "2026-09-01T12:00:00Z",
+      "actor": {
+        "kind": "human",
+        "id": "synthetic-operator"
+      },
+      "decision_id": "decision-1",
+      "opportunity_id": "opp-1",
+      "plan": {
+        "hypothesis_claim": "c-next",
+        "useful_result_claim": "c-value",
+        "recipient": {
+          "alias": "synthetic-recipient",
+          "role": "Synthetic operations reviewer, budget authority unknown",
+          "organization": "Synthetic Company A",
+          "synthetic": true
+        },
+        "channel": "manual_email",
+        "artifact_plan": "Prepare a short synthetic missing-row checklist with explicit unknown cost, no savings promise.",
+        "success_claim": "c-success",
+        "kill_claim": "c-kill",
+        "spend_limit": {
+          "value": "0.00",
+          "unit": "money",
+          "currency": "USD",
+          "period": "one_time"
+        },
+        "response_deadline": "2026-09-03T12:00:00Z"
+      }
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "artifact-1",
+      "run_id": "run-synthetic",
+      "synthetic": true,
+      "created_at": "2026-09-01T13:00:00Z",
+      "actor": {
+        "kind": "human",
+        "id": "synthetic-operator"
+      },
+      "test_id": "test-1",
+      "version": 1,
+      "previous_version_id": null,
+      "title": "Synthetic missing-row checklist v1",
+      "purpose": "Useful hypothetical review checklist, not promotional copy.",
+      "content": {
+        "kind": "text",
+        "text": "SYNTHETIC ONLY — Company A missing-row checklist: compare row counts, inspect missing identifiers, record exceptions. Cost and buyer budget remain unknown. The 50.00 USD/month accounting scenario is an estimate, not loss or savings. No actual transmission.",
+        "sha256": "d1b05b3740002221af9a2b6ba243a8cc4ada47c853ba83cdf85e6b1c7b9b7d67"
+      },
+      "claim_ids": [
+        "c-work",
+        "c-gap",
+        "c-cost"
+      ],
+      "caveats": [
+        "All entities and monetary numbers are synthetic; no contact or transfer occurred.",
+        "Estimate is not recoverable loss."
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "event-sent",
+      "run_id": "run-synthetic",
+      "synthetic": true,
+      "created_at": "2026-09-01T14:00:00Z",
+      "actor": {
+        "kind": "human",
+        "id": "synthetic-operator"
+      },
+      "test_id": "test-1",
+      "kind": "sent",
+      "occurred_at": "2026-09-01T14:00:00Z",
+      "description": "SYNTHETIC event only; no actual communication, meeting or payment.",
+      "basis": "Synthetic operator fixture record, not independent market evidence.",
+      "correction_of": null,
+      "correction_reason": null,
+      "artifact_id": "artifact-1",
+      "recipient_alias": "synthetic-recipient",
+      "channel": "manual_email"
+    },
+    {
+      "id": "event-response",
+      "run_id": "run-synthetic",
+      "synthetic": true,
+      "created_at": "2026-09-01T15:00:00Z",
+      "actor": {
+        "kind": "human",
+        "id": "synthetic-operator"
+      },
+      "test_id": "test-1",
+      "kind": "responded",
+      "occurred_at": "2026-09-01T15:00:00Z",
+      "description": "SYNTHETIC event only; no actual communication, meeting or payment.",
+      "basis": "Synthetic operator fixture record, not independent market evidence.",
+      "correction_of": null,
+      "correction_reason": null,
+      "sent_id": "event-sent",
+      "response": "Synthetic recipient: checklist understood, but we will not buy now."
+    },
+    {
+      "id": "event-rejected",
+      "run_id": "run-synthetic",
+      "synthetic": true,
+      "created_at": "2026-09-01T16:00:00Z",
+      "actor": {
+        "kind": "human",
+        "id": "synthetic-operator"
+      },
+      "test_id": "test-1",
+      "kind": "rejected",
+      "occurred_at": "2026-09-01T16:00:00Z",
+      "description": "SYNTHETIC event only; no actual communication, meeting or payment.",
+      "basis": "Synthetic operator fixture record, not independent market evidence.",
+      "correction_of": null,
+      "correction_reason": null,
+      "sent_id": "event-sent",
+      "responded_id": "event-response",
+      "reason": "Synthetic recipient declines a purchase now; no inference of absent problem."
+    }
+  ],
+  "feedback": [
+    {
+      "id": "feedback-outcome",
+      "run_id": "run-synthetic",
+      "synthetic": true,
+      "created_at": "2026-09-01T17:00:00Z",
+      "actor": {
+        "kind": "human",
+        "id": "synthetic-operator"
+      },
+      "opportunity_id": "opp-1",
+      "kind": "outcome",
+      "reason": "Synthetic rejection is not a falsification of all manual-work evidence.",
+      "claim_ids": [
+        "c-next",
+        "c-buyer"
+      ],
+      "conclusion": "No willingness to pay established.",
+      "next_step": "Investigate buyer authority rather than promise savings.",
+      "test_id": "test-1",
+      "event_id": "event-rejected",
+      "remaining_unknown": "Budget authority and actual loss remain unknown."
+    }
+  ]
+}

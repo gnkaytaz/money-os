@@ -1,0 +1,84 @@
+{
+  "id": "N-add",
+  "title": "Безопасная арифметика add; проверка единиц, не смысла",
+  "base": "candidate.json",
+  "changes": [
+    {
+      "path": [
+        "claims",
+        2,
+        "quantity"
+      ],
+      "value": {
+        "value": "12.50",
+        "unit": "money",
+        "currency": "USD",
+        "period": "month"
+      }
+    },
+    {
+      "path": [
+        "claims",
+        3,
+        "quantity"
+      ],
+      "value": {
+        "value": "5.00",
+        "unit": "money",
+        "currency": "USD",
+        "period": "month"
+      }
+    },
+    {
+      "path": [
+        "claims",
+        7,
+        "formula"
+      ],
+      "value": {
+        "operation": "add",
+        "inputs": [
+          {
+            "claim_id": "c-rate",
+            "quantity": {
+              "value": "12.50",
+              "unit": "money",
+              "currency": "USD",
+              "period": "month"
+            }
+          },
+          {
+            "claim_id": "c-solution",
+            "quantity": {
+              "value": "5.00",
+              "unit": "money",
+              "currency": "USD",
+              "period": "month"
+            }
+          }
+        ],
+        "result": {
+          "value": "17.50",
+          "unit": "money",
+          "currency": "USD",
+          "period": "month"
+        },
+        "range": {
+          "low": "17.50",
+          "high": "17.50"
+        }
+      }
+    }
+  ],
+  "expected": {
+    "structure": true,
+    "graph": true,
+    "gate": "not_requested",
+    "invariant": "G-ARITHMETIC"
+  },
+  "semantic_oracle": {
+    "verdict": "arithmetic_only_not_reviewed",
+    "reason": "Безопасная арифметика add; проверка единиц, не смысла"
+  },
+  "reason": "Безопасная арифметика add; проверка единиц, не смысла"
+}

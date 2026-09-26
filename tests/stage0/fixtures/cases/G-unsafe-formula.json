@@ -1,0 +1,27 @@
+{
+  "id": "G-unsafe-formula",
+  "title": "Исполняемая формула запрещена",
+  "base": "candidate.json",
+  "changes": [
+    {
+      "path": [
+        "claims",
+        7,
+        "formula",
+        "operation"
+      ],
+      "value": "__import__('os').system('echo unsafe')"
+    }
+  ],
+  "expected": {
+    "structure": false,
+    "graph": false,
+    "gate": "not_requested",
+    "invariant": "S-ENUM"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "Исполняемая формула запрещена"
+  },
+  "reason": "Исполняемая формула запрещена"
+}

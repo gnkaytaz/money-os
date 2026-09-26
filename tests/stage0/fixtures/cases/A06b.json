@@ -1,0 +1,34 @@
+{
+  "id": "A06b",
+  "title": "Snippet не поддерживает fact",
+  "base": "candidate.json",
+  "changes": [
+    {
+      "path": [
+        "sources",
+        0,
+        "kind"
+      ],
+      "value": "snippet"
+    },
+    {
+      "path": [
+        "sources",
+        0,
+        "error"
+      ],
+      "value": "Synthetic page retrieval failed."
+    }
+  ],
+  "expected": {
+    "structure": true,
+    "graph": false,
+    "gate": "not_requested",
+    "invariant": "G-FACT"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "Snippet не поддерживает fact"
+  },
+  "reason": "Snippet не поддерживает fact"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "G-no-anchor",
+  "title": "Inference только из unknown не имеет наблюдаемой опоры",
+  "base": "candidate.json",
+  "changes": [
+    {
+      "path": [
+        "claims",
+        11,
+        "premises"
+      ],
+      "value": [
+        "c-buyer",
+        "c-cost"
+      ]
+    }
+  ],
+  "expected": {
+    "structure": true,
+    "graph": false,
+    "gate": "not_requested",
+    "invariant": "G-ANCHOR"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "Inference только из unknown не имеет наблюдаемой опоры"
+  },
+  "reason": "Inference только из unknown не имеет наблюдаемой опоры"
+}

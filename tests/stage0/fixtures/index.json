@@ -1,0 +1,302 @@
+[
+  {
+    "id": "A01",
+    "input": "cases/A01.json"
+  },
+  {
+    "id": "A02",
+    "input": "cases/A02.json"
+  },
+  {
+    "id": "A03",
+    "input": "cases/A03.json"
+  },
+  {
+    "id": "A04",
+    "input": "cases/A04.json"
+  },
+  {
+    "id": "A05",
+    "input": "cases/A05.json"
+  },
+  {
+    "id": "A06a",
+    "input": "cases/A06a.json"
+  },
+  {
+    "id": "A06b",
+    "input": "cases/A06b.json"
+  },
+  {
+    "id": "A07",
+    "input": "cases/A07.json"
+  },
+  {
+    "id": "A08",
+    "input": "cases/A08.json"
+  },
+  {
+    "id": "A09",
+    "input": "cases/A09.json"
+  },
+  {
+    "id": "A10",
+    "input": "cases/A10.json"
+  },
+  {
+    "id": "A11",
+    "input": "cases/A11.json"
+  },
+  {
+    "id": "A12",
+    "input": "cases/A12.json"
+  },
+  {
+    "id": "A13",
+    "input": "cases/A13.json"
+  },
+  {
+    "id": "A14a",
+    "input": "cases/A14a.json"
+  },
+  {
+    "id": "A14b",
+    "input": "cases/A14b.json"
+  },
+  {
+    "id": "A15",
+    "input": "cases/A15.json"
+  },
+  {
+    "id": "A16",
+    "input": "cases/A16.json"
+  },
+  {
+    "id": "A17a",
+    "input": "cases/A17a.json"
+  },
+  {
+    "id": "A17b",
+    "input": "cases/A17b.json"
+  },
+  {
+    "id": "A18",
+    "input": "cases/A18.json"
+  },
+  {
+    "id": "A19a",
+    "input": "cases/A19a.json"
+  },
+  {
+    "id": "A19b",
+    "input": "cases/A19b.json"
+  },
+  {
+    "id": "E00",
+    "input": "cases/E00.json"
+  },
+  {
+    "id": "E-sent",
+    "input": "cases/E-sent.json"
+  },
+  {
+    "id": "E-responded",
+    "input": "cases/E-responded.json"
+  },
+  {
+    "id": "E-interested",
+    "input": "cases/E-interested.json"
+  },
+  {
+    "id": "E-rejected",
+    "input": "cases/E-rejected.json"
+  },
+  {
+    "id": "E-no_response",
+    "input": "cases/E-no_response.json"
+  },
+  {
+    "id": "E-meeting",
+    "input": "cases/E-meeting.json"
+  },
+  {
+    "id": "E-paid",
+    "input": "cases/E-paid.json"
+  },
+  {
+    "id": "E-prepared",
+    "input": "cases/E-prepared.json"
+  },
+  {
+    "id": "E-no-version",
+    "input": "cases/E-no-version.json"
+  },
+  {
+    "id": "E-other-test",
+    "input": "cases/E-other-test.json"
+  },
+  {
+    "id": "E-two-versions",
+    "input": "cases/E-two-versions.json"
+  },
+  {
+    "id": "E-early-silence",
+    "input": "cases/E-early-silence.json"
+  },
+  {
+    "id": "D-model",
+    "input": "cases/D-model.json"
+  },
+  {
+    "id": "F-research",
+    "input": "cases/F-research.json"
+  },
+  {
+    "id": "F-outcome",
+    "input": "cases/F-outcome.json"
+  },
+  {
+    "id": "F-not-research",
+    "input": "cases/F-not-research.json"
+  },
+  {
+    "id": "D-REJECT",
+    "input": "cases/D-REJECT.json"
+  },
+  {
+    "id": "D-INVESTIGATE",
+    "input": "cases/D-INVESTIGATE.json"
+  },
+  {
+    "id": "D-problem",
+    "input": "cases/D-problem.json"
+  },
+  {
+    "id": "D-plan",
+    "input": "cases/D-plan.json"
+  },
+  {
+    "id": "D-review",
+    "input": "cases/D-review.json"
+  },
+  {
+    "id": "D-recipient",
+    "input": "cases/D-recipient.json"
+  },
+  {
+    "id": "S-unknown-property",
+    "input": "cases/S-unknown-property.json"
+  },
+  {
+    "id": "S-bool-int",
+    "input": "cases/S-bool-int.json"
+  },
+  {
+    "id": "S-naive-time",
+    "input": "cases/S-naive-time.json"
+  },
+  {
+    "id": "S-unknown-value",
+    "input": "cases/S-unknown-value.json"
+  },
+  {
+    "id": "G-foreign-run",
+    "input": "cases/G-foreign-run.json"
+  },
+  {
+    "id": "G-hash",
+    "input": "cases/G-hash.json"
+  },
+  {
+    "id": "G-currency",
+    "input": "cases/G-currency.json"
+  },
+  {
+    "id": "G-arithmetic",
+    "input": "cases/G-arithmetic.json"
+  },
+  {
+    "id": "G-float",
+    "input": "cases/G-float.json"
+  },
+  {
+    "id": "G-missing-input",
+    "input": "cases/G-missing-input.json"
+  },
+  {
+    "id": "G-unsafe-formula",
+    "input": "cases/G-unsafe-formula.json"
+  },
+  {
+    "id": "E-response-without-sent",
+    "input": "cases/E-response-without-sent.json"
+  },
+  {
+    "id": "E-no-response-link",
+    "input": "cases/E-no-response-link.json"
+  },
+  {
+    "id": "E-paid-zero",
+    "input": "cases/E-paid-zero.json"
+  },
+  {
+    "id": "E-before-artifact",
+    "input": "cases/E-before-artifact.json"
+  },
+  {
+    "id": "G-synthetic-mix",
+    "input": "cases/G-synthetic-mix.json"
+  },
+  {
+    "id": "M-snapshot",
+    "input": "cases/M-snapshot.json"
+  },
+  {
+    "id": "S-malformed",
+    "input": "cases/S-malformed.json"
+  },
+  {
+    "id": "S-duplicate-json",
+    "input": "cases/S-duplicate-json.json"
+  },
+  {
+    "id": "E-late-response",
+    "input": "cases/E-late-response.json"
+  },
+  {
+    "id": "E-correction",
+    "input": "cases/E-correction.json"
+  },
+  {
+    "id": "E-meeting-held",
+    "input": "cases/E-meeting-held.json"
+  },
+  {
+    "id": "G-no-anchor",
+    "input": "cases/G-no-anchor.json"
+  },
+  {
+    "id": "N-add",
+    "input": "cases/N-add.json"
+  },
+  {
+    "id": "N-subtract",
+    "input": "cases/N-subtract.json"
+  },
+  {
+    "id": "N-multiply",
+    "input": "cases/N-multiply.json"
+  },
+  {
+    "id": "N-divide",
+    "input": "cases/N-divide.json"
+  },
+  {
+    "id": "N-zero-divisor",
+    "input": "cases/N-zero-divisor.json"
+  },
+  {
+    "id": "N-inexact",
+    "input": "cases/N-inexact.json"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "id": "S-duplicate-json",
+  "title": "Дублирующийся JSON key",
+  "base": "duplicate.json.txt",
+  "changes": [],
+  "expected": {
+    "structure": false,
+    "graph": false,
+    "gate": "not_requested",
+    "invariant": "S-JSON"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "Дублирующийся JSON key"
+  },
+  "reason": "Дублирующийся JSON key"
+}

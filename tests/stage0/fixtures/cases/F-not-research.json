@@ -1,0 +1,26 @@
+{
+  "id": "F-not-research",
+  "title": "Outcome нельзя переименовать в research",
+  "base": "golden.json",
+  "changes": [
+    {
+      "path": [
+        "feedback",
+        0,
+        "kind"
+      ],
+      "value": "research"
+    }
+  ],
+  "expected": {
+    "structure": false,
+    "graph": false,
+    "gate": "not_requested",
+    "invariant": "S-SHAPE"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "Outcome нельзя переименовать в research"
+  },
+  "reason": "Outcome нельзя переименовать в research"
+}

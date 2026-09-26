@@ -1,0 +1,17 @@
+{
+  "id": "A07",
+  "title": "Пустое исследование",
+  "base": "empty_research.json",
+  "changes": [],
+  "expected": {
+    "structure": true,
+    "graph": true,
+    "gate": "not_requested",
+    "invariant": "G-ANCHOR"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "Источников нет: допустим insufficient_evidence без Problem/Opportunity."
+  },
+  "reason": "Источников нет: допустим insufficient_evidence без Problem/Opportunity."
+}

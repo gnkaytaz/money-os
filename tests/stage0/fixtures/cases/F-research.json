@@ -1,0 +1,67 @@
+{
+  "id": "F-research",
+  "title": "Research feedback отдельно от outcome",
+  "base": "golden.json",
+  "changes": [
+    {
+      "path": [
+        "feedback"
+      ],
+      "value": [
+        {
+          "id": "feedback-research",
+          "run_id": "run-synthetic",
+          "synthetic": true,
+          "created_at": "2026-09-01T17:00:00Z",
+          "actor": {
+            "kind": "human",
+            "id": "synthetic-operator"
+          },
+          "opportunity_id": "opp-1",
+          "kind": "research",
+          "reason": "Clarify estimate vs actual loss.",
+          "claim_ids": [
+            "c-estimate"
+          ],
+          "conclusion": "Do not use accounting effort as recoverable savings.",
+          "next_step": "Collect loss evidence separately.",
+          "decision_id": "decision-1",
+          "proposed_correction": "Retain cost as unknown."
+        },
+        {
+          "id": "feedback-outcome",
+          "run_id": "run-synthetic",
+          "synthetic": true,
+          "created_at": "2026-09-01T17:00:00Z",
+          "actor": {
+            "kind": "human",
+            "id": "synthetic-operator"
+          },
+          "opportunity_id": "opp-1",
+          "kind": "outcome",
+          "reason": "Synthetic rejection is not a falsification of all manual-work evidence.",
+          "claim_ids": [
+            "c-next",
+            "c-buyer"
+          ],
+          "conclusion": "No willingness to pay established.",
+          "next_step": "Investigate buyer authority rather than promise savings.",
+          "test_id": "test-1",
+          "event_id": "event-rejected",
+          "remaining_unknown": "Budget authority and actual loss remain unknown."
+        }
+      ]
+    }
+  ],
+  "expected": {
+    "structure": true,
+    "graph": true,
+    "gate": "allowed",
+    "invariant": "G-FEEDBACK"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "Research feedback отдельно от outcome"
+  },
+  "reason": "Research feedback отдельно от outcome"
+}

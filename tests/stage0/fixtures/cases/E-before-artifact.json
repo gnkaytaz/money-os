@@ -1,0 +1,26 @@
+{
+  "id": "E-before-artifact",
+  "title": "Отправка до подготовки",
+  "base": "golden.json",
+  "changes": [
+    {
+      "path": [
+        "events",
+        0,
+        "occurred_at"
+      ],
+      "value": "2026-09-01T12:00:00Z"
+    }
+  ],
+  "expected": {
+    "structure": true,
+    "graph": false,
+    "gate": "not_requested",
+    "invariant": "G-TIME"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "Отправка до подготовки"
+  },
+  "reason": "Отправка до подготовки"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "A17b",
+  "title": "Фальшивая сумма с нерелевантной цитатой",
+  "base": "semantic_forgery.json",
+  "changes": [],
+  "expected": {
+    "structure": true,
+    "graph": true,
+    "gate": "denied",
+    "invariant": "T-SEMANTICS"
+  },
+  "semantic_oracle": {
+    "verdict": "unsupported",
+    "reason": "Граф валиден, но human review/oracle отвергает смысл; TEST запрещён. Схема не доказывает entailment."
+  },
+  "reason": "Граф валиден, но human review/oracle отвергает смысл; TEST запрещён. Схема не доказывает entailment."
+}

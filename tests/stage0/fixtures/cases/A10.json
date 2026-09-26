@@ -1,0 +1,17 @@
+{
+  "id": "A10",
+  "title": "Inference из нескольких Claims",
+  "base": "candidate.json",
+  "changes": [],
+  "expected": {
+    "structure": true,
+    "graph": true,
+    "gate": "not_requested",
+    "invariant": "G-DAG"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "Ценный результат ссылается на c-work и c-gap; rationale и falsifier обязательны."
+  },
+  "reason": "Ценный результат ссылается на c-work и c-gap; rationale и falsifier обязательны."
+}

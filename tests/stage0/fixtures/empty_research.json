@@ -1,0 +1,45 @@
+{
+  "contract_version": "0.1",
+  "run": {
+    "id": "run-synthetic",
+    "synthetic": true,
+    "created_at": "2026-09-01T08:00:00Z",
+    "actor": {
+      "kind": "human",
+      "id": "synthetic-operator"
+    },
+    "query": {
+      "question": "Would a missing-row checklist help synthetic Company A?",
+      "segment": "Synthetic accounting teams",
+      "constraints": [
+        "Synthetic only; no network, transmission or real contacts."
+      ],
+      "primary_search": "synthetic manual reconciliation",
+      "counter_search": "synthetic reconciliation existing solution",
+      "search_limit": 8,
+      "page_limit": 5
+    },
+    "state": "insufficient_evidence",
+    "finished_at": "2026-09-01T10:00:00Z",
+    "error": null,
+    "error_stage": null,
+    "model": null,
+    "prompt_version": "manual-fixture-v1",
+    "schema_version": "0.1",
+    "model_io": [],
+    "memory_inputs": [],
+    "parent_run_id": null,
+    "dossier_version": "dossier-1"
+  },
+  "sources": [],
+  "observations": [],
+  "claims": [],
+  "evidence": [],
+  "problems": [],
+  "opportunities": [],
+  "decisions": [],
+  "tests": [],
+  "artifacts": [],
+  "events": [],
+  "feedback": []
+}

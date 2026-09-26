@@ -1,0 +1,26 @@
+{
+  "id": "E-prepared",
+  "title": "artifact_prepared не Market Event",
+  "base": "golden.json",
+  "changes": [
+    {
+      "path": [
+        "events",
+        0,
+        "kind"
+      ],
+      "value": "artifact_prepared"
+    }
+  ],
+  "expected": {
+    "structure": false,
+    "graph": false,
+    "gate": "not_requested",
+    "invariant": "S-ENUM"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "artifact_prepared не Market Event"
+  },
+  "reason": "artifact_prepared не Market Event"
+}

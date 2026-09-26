@@ -1,0 +1,27 @@
+{
+  "id": "D-problem",
+  "title": "TEST при неподтверждённой проблеме",
+  "base": "golden.json",
+  "changes": [
+    {
+      "path": [
+        "decisions",
+        0,
+        "review",
+        "problem_supported"
+      ],
+      "value": false
+    }
+  ],
+  "expected": {
+    "structure": true,
+    "graph": true,
+    "gate": "denied",
+    "invariant": "T-PROBLEM"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "TEST при неподтверждённой проблеме"
+  },
+  "reason": "TEST при неподтверждённой проблеме"
+}

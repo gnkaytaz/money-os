@@ -1,0 +1,26 @@
+{
+  "id": "S-unknown-value",
+  "title": "Unknown не имеет value",
+  "base": "candidate.json",
+  "changes": [
+    {
+      "path": [
+        "claims",
+        5,
+        "value"
+      ],
+      "value": "50000"
+    }
+  ],
+  "expected": {
+    "structure": false,
+    "graph": false,
+    "gate": "not_requested",
+    "invariant": "S-SHAPE"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "Unknown не имеет value"
+  },
+  "reason": "Unknown не имеет value"
+}

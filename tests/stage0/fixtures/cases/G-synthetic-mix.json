@@ -1,0 +1,26 @@
+{
+  "id": "G-synthetic-mix",
+  "title": "Нельзя смешать synthetic и real",
+  "base": "candidate.json",
+  "changes": [
+    {
+      "path": [
+        "sources",
+        0,
+        "synthetic"
+      ],
+      "value": false
+    }
+  ],
+  "expected": {
+    "structure": true,
+    "graph": false,
+    "gate": "not_requested",
+    "invariant": "G-SYNTHETIC"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "Нельзя смешать synthetic и real"
+  },
+  "reason": "Нельзя смешать synthetic и real"
+}

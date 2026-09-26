@@ -1,0 +1,26 @@
+{
+  "id": "G-foreign-run",
+  "title": "Entity другого run",
+  "base": "candidate.json",
+  "changes": [
+    {
+      "path": [
+        "sources",
+        0,
+        "run_id"
+      ],
+      "value": "foreign-run"
+    }
+  ],
+  "expected": {
+    "structure": true,
+    "graph": false,
+    "gate": "not_requested",
+    "invariant": "G-SCOPE"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "Entity другого run"
+  },
+  "reason": "Entity другого run"
+}

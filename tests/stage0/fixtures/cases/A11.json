@@ -1,0 +1,17 @@
+{
+  "id": "A11",
+  "title": "Воспроизводимая Decimal оценка",
+  "base": "candidate.json",
+  "changes": [],
+  "expected": {
+    "structure": true,
+    "graph": true,
+    "gate": "not_requested",
+    "invariant": "G-ARITHMETIC"
+  },
+  "semantic_oracle": {
+    "verdict": "consistent",
+    "reason": "4 hours/month × 12.50 USD/hour = 50.00 USD/month; диапазон 40–60 — допущение, не статистика."
+  },
+  "reason": "4 hours/month × 12.50 USD/hour = 50.00 USD/month; диапазон 40–60 — допущение, не статистика."
+}
